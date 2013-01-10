@@ -11,3 +11,13 @@ CREATE TABLE aff_rewards (
    --conversion
    net_balance numeric
 );
+
+
+-- part of company_details
+CREATE TABLE aff_referrals (
+   contact_id integer,
+   referred_id integer,
+   referring_type varchar(12),
+   referral_calc_ref varchar(12),
+   referring_info text
+);
